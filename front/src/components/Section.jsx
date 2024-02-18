@@ -2,16 +2,26 @@ import React from 'react'
 import NavSection from './NavSection'
 import CardCar from './CardCar'
 
-const Section = () => {
+const getCoches = async () => {
+    const res = await fetch('http://localhost:3000/api/coches')
+    const data = await res.json()
+    
+    return data
+}
+
+const Section = async () => {
+
+    const coches = await getCoches()
+
   return (
     <section className='container p-4 px-20 mt-8'>
         <NavSection />
         <div className='flex gap-4 flex-wrap mt-8'>
-        <CardCar />
-        <CardCar />
-        <CardCar />
-        <CardCar />
-        <CardCar />
+            {
+                coches.map(coche => (
+                    <CardCar key={coche.id} nombre={coche.nombre} img={coche.imagen1} />
+                ))
+            }
         </div>
     </section>
   )

@@ -8,7 +8,7 @@ const NavSection = () => {
         <div className='flex gap-4'>
             <label htmlFor="" className='font-semibold'>Tiempo:</label>
                 <select name="" id="">
-                <option value="" selected>Un dia</option>
+                <option value="" >Un dia</option>
                 <option value="" >Un mes</option>
                 <option value="" >Un año</option>
             </select>
@@ -16,7 +16,7 @@ const NavSection = () => {
         <div className='flex gap-4'>
             <label htmlFor="" className='font-semibold'>Precio:</label>
             <select name="" id="">
-                <option value="" selected>1.000.000</option>
+                <option value="" >1.000.000</option>
                 <option value="" >2.000.000</option>
                 <option value="" >3.000.000</option>
                 <option value="" >4.000.000</option>

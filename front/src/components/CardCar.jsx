@@ -1,13 +1,13 @@
 import React from 'react'
 
-const CardCar = () => {
+const CardCar = ( {id, nombre, img} ) => {
   return (
-    <div className='bg-slate-100 rounded-2xl p-4 flex justify-between items-start flex-col w-80 hover:shadow-xl hover:bg-white duration-500'>
+    <div key={id} className='bg-slate-100 rounded-2xl p-4 flex justify-between items-start flex-col w-80 h-96 hover:shadow-xl hover:bg-white duration-500'>
         <div>
-            <h3 className='font-semibold text-xl'>Land Cruiser 300</h3>
+            <h3 className='font-semibold text-xl'>{nombre}</h3>
         </div>
-        <div>
-            <img className='flex' src="https://www.toyota.com.co/wp-content/uploads/2021/08/LC-400X400_Mesa-de-trabajo-1.png" alt="" />
+        <div className='flex'>
+            <img className='flex' src={img} alt="" />
         </div>
         <div className='flex justify-between items-center w-3/4 m-auto'>
             <button className='bg-sky-300 font-semibold p-2 px-4 rounded-3xl hover:bg-sky-600 hover:text-white duration-300'>Ver mas</button>
