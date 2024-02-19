@@ -19,7 +19,7 @@ const Section = async () => {
         <div className='flex gap-4 flex-wrap mt-8'>
             {
                 coches.map(coche => (
-                    <CardCar key={coche.id} nombre={coche.nombre} img={coche.imagen1} />
+                    <CardCar key={coche.id} id={coche.id} nombre={coche.nombre} img={coche.imagen1} />
                 ))
             }
         </div>
