@@ -14,7 +14,7 @@ const Section = async () => {
     const coches = await getCoches()
 
   return (
-    <section className='container p-4 px-20 mt-8'>
+    <section className='container p-4 md:px-20 sm:px-4 mt-8'>
         <NavSection />
         <div className='flex gap-4 flex-wrap mt-8'>
             {

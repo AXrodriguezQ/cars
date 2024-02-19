@@ -20,7 +20,10 @@ const CardCar = ( {id, nombre, img} ) => {
               className='bg-sky-300 font-semibold p-2 px-4 rounded-3xl hover:bg-sky-600 hover:text-white duration-300'
               onClick={() => router.push('/coches/'+ id)}
               >Ver mas</button>
-            <button className='bg-green-300 font-semibold p-2 px-4 rounded-3xl hover:bg-green-600 hover:text-white duration-300'>Alquilar</button>
+            <button
+              className='bg-green-300 font-semibold p-2 px-4 rounded-3xl hover:bg-green-600 hover:text-white duration-300'
+              onClick={() => router.push('/cash/'+ id)}
+              >Alquilar</button>
         </div>
     </div>
   )
